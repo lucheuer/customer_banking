@@ -1,17 +1,25 @@
-""" Create a Account class with methods"""
+""" Create an Account class with methods"""
 
 class Account:
-    """Creating an Account class with methods"""
+    """Class representing a bank account"""
+    
     def __init__(self, balance, interest):
+        """Initialize an account object with a balance and interest"""
         self.balance = balance
         self.interest = interest
 
-    # This method sets the balance of the account.
     def set_balance(self, balance):
-        """Sets the balance for the for the account"""
+        """Sets the balance for the account"""
         self.balance = balance
+        
+    def get_balance(self):
+        """Get the current balance of the account."""
+        return self.balance
 
-    # The method sets the interest gained for the account.
     def set_interest(self, interest):
-        """Sets the interest gained for the the account"""
+        """Set the interest rate for the account"""
         self.interest = interest
+    
+    def get_interest(self):
+        """Get the interest rate of the account."""
+        return self.interest
